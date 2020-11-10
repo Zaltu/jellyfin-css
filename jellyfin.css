@@ -1,0 +1,21 @@
+/*Display Photo Library icons using the same aspect ratio as everything else...*/
+.cardPadder-square,
+.cardPadder-mixedSquare,
+.cardPadder-overflowSquare,
+.overflowSquareCard-textCardPadder {
+    padding-bottom: 150%;
+    contain: strict;
+}
+
+/*Remove media carousel from homepage, taken from Jellyfin docs.*/
+@media all and (min-width: 50em) {
+  .homePage .emby-scroller {
+    margin-right: 0;
+  }
+  .homePage .emby-scrollbuttons {
+    display: none;
+  }
+  .homePage .itemsContainer {
+    flex-wrap: wrap;
+  }
+}
